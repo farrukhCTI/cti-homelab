@@ -43,6 +43,9 @@ Linux: Dell E7250 i5-5300U, 8GB RAM, Linux Mint 22.1
   - WSL memory capped at 5GB via .wslconfig
   - Docker Desktop installed and running (v29.2.1)
   - Docker data root on D:\docker data\DockerDesktopWSL
+  - Bitwarden installed with 2FA
+  - ProtonMail research identity created
+  - Discord CTI Lab server created (5 channels)
 
 ## Known Issues
   None yet.
@@ -51,10 +54,8 @@ Linux: Dell E7250 i5-5300U, 8GB RAM, Linux Mint 22.1
   See decisions.md
 
 ## Next Steps
-  - Get Windows IP and update this file
+  - Install Sysmon with SwiftOnSecurity config
+  - Install Winlogbeat
   - Get Linux IP and update this file
-  - Install Docker Desktop on Windows
-  - Configure Docker data root to D:\DockerData
-  - Install Bitwarden
-  - Create ProtonMail research identity
-  - Set up Discord server
+  - Phase 0 complete, begin Phase 1 (MISP)
+  - Get Linux IP and update this file
