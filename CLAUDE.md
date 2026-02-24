@@ -6,7 +6,7 @@ DFIR: learn on the job. Do not over-engineer this now.
 
 ## Hardware
 Windows: Dell i5-1035G1, 8GB RAM, Win11 Pro, PS7
-  IP: [run ipconfig and fill in]
+  IP: 192.168.100.4
   Docker limit: 3 containers MAX simultaneously
   C: 234GB (82GB free) | D: 463GB | E: 467GB
 
