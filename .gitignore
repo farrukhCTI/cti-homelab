@@ -1,0 +1,27 @@
+# Secrets — NEVER commit these
+.env
+*.key
+*.pem
+*credentials*
+*password*
+*secret*
+*api_key*
+
+# Docker runtime data
+volumes/
+data/
+
+# OS noise
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# Logs
+*.log
+logs/
