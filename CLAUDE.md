@@ -39,6 +39,10 @@ Linux: Dell E7250 i5-5300U, 8GB RAM, Linux Mint 22.1
   - Claude Code installed (2.1.52)
   - GitHub repo created: https://github.com/farrukhCTI/cti-homelab
   - Folder structure created on D:\cti-homelab
+  - Static IP set: 192.168.100.4 (permanent)
+  - WSL memory capped at 5GB via .wslconfig
+  - Docker Desktop installed and running (v29.2.1)
+  - Docker data root on D:\docker data\DockerDesktopWSL
 
 ## Known Issues
   None yet.
