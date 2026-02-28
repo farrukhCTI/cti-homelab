@@ -49,6 +49,11 @@ Linux: Dell E7250 i5-5300U, 8GB RAM, Linux Mint 22.1
   - Sysmon v15.15 installed with SwiftOnSecurity config
   - Sysmon logs verified (Event ID 1, 4, 16 confirmed)
   - Config committed to GitHub: windows/sysmon/sysmonconfig.xml
+  - Elasticsearch v8.13.0 running in Docker on localhost:9200
+  - Winlogbeat v8.13.0 installed as Windows service
+  - Winlogbeat shipping Sysmon, Security, System, PowerShell logs to Elasticsearch
+  - Pipeline verified: 730+ events indexed
+  - Config committed to GitHub: windows/winlogbeat/winlogbeat.yml
 
 ## Known Issues
   None yet.
@@ -57,7 +62,5 @@ Linux: Dell E7250 i5-5300U, 8GB RAM, Linux Mint 22.1
   See decisions.md
 
 ## Next Steps
-  - ## Next Steps
-  - Install Winlogbeat
   - Get Linux IP and update this file
   - Phase 0 complete, begin Phase 1 (MISP)
