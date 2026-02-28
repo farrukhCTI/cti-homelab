@@ -46,6 +46,9 @@ Linux: Dell E7250 i5-5300U, 8GB RAM, Linux Mint 22.1
   - Bitwarden installed with 2FA
   - ProtonMail research identity created
   - Discord CTI Lab server created (5 channels)
+  - Sysmon v15.15 installed with SwiftOnSecurity config
+  - Sysmon logs verified (Event ID 1, 4, 16 confirmed)
+  - Config committed to GitHub: windows/sysmon/sysmonconfig.xml
 
 ## Known Issues
   None yet.
@@ -54,8 +57,7 @@ Linux: Dell E7250 i5-5300U, 8GB RAM, Linux Mint 22.1
   See decisions.md
 
 ## Next Steps
-  - Install Sysmon with SwiftOnSecurity config
+  - ## Next Steps
   - Install Winlogbeat
   - Get Linux IP and update this file
   - Phase 0 complete, begin Phase 1 (MISP)
-  - Get Linux IP and update this file
