@@ -1,0 +1,29 @@
+winlogbeat.event_logs:
+  - name: Microsoft-Windows-Sysmon/Operational
+    ignore_older: 30m
+
+  - name: Security
+    ignore_older: 30m
+    event_id: 4624, 4625, 4648, 4672, 4688, 4697, 4698, 4720, 4726
+
+  - name: System
+    ignore_older: 30m
+    event_id: 7034, 7035, 7036, 7040
+
+  - name: Windows PowerShell
+    ignore_older: 30m
+
+output.elasticsearch:
+  hosts: ["localhost:9200"]
+  index: "winlogbeat-%{+yyyy.MM.dd}"
+
+setup.ilm.enabled: false
+setup.template.name: "winlogbeat"
+setup.template.pattern: "winlogbeat-*"
+
+logging.level: info
+logging.to_files: true
+logging.files:
+  path: C:\ProgramData\winlogbeat\logs
+  name: winlogbeat
+  keepfiles: 7
