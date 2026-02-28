@@ -31,7 +31,7 @@ Linux: Dell E7250 i5-5300U, 8GB RAM, Linux Mint 22.1
   SpiderFoot: http://localhost:5001 (on demand)
 
 ## Current Phase
-  Phase 0 — Foundation
+  Phase 1 — MISP
 
 ## What Is Working
   - Git installed (2.53.0)
@@ -54,6 +54,10 @@ Linux: Dell E7250 i5-5300U, 8GB RAM, Linux Mint 22.1
   - Winlogbeat shipping Sysmon, Security, System, PowerShell logs to Elasticsearch
   - Pipeline verified: 730+ events indexed
   - Config committed to GitHub: windows/winlogbeat/winlogbeat.yml
+  - Linux static IP configured: 192.168.100.51 on wlp2s0
+  - Linux Git configured and authenticated to GitHub
+  - Repo cloned on Linux: ~/cti-homelab
+  - Phase 0 complete
 
 ## Known Issues
   None yet.
@@ -62,5 +66,7 @@ Linux: Dell E7250 i5-5300U, 8GB RAM, Linux Mint 22.1
   See decisions.md
 
 ## Next Steps
-  - Get Linux IP and update this file
-  - Phase 0 complete, begin Phase 1 (MISP)
+  - Deploy MISP in Docker on Windows
+  - Configure MISP feeds
+  - Connect MISP to Elasticsearch
+  - Begin IOC ingestion workflow
