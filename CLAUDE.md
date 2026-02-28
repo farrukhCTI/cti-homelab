@@ -11,7 +11,7 @@ Windows: Dell i5-1035G1, 8GB RAM, Win11 Pro, PS7
   C: 234GB (82GB free) | D: 463GB | E: 467GB
 
 Linux: Dell E7250 i5-5300U, 8GB RAM, Linux Mint 22.1
-  IP: [run ip a on Linux and fill in]
+  IP: 192.168.100.51 (static)
   No Docker. Native installs only. Always on, plugged in.
 
 ## Always-On Docker (Windows)
